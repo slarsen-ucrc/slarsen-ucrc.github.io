@@ -6,7 +6,7 @@ var cols = [
 { id : "storage", alias: "Storage",dataType : tableau.dataTypeEnum.string }
 ];
 var tableInfo = {
-id : "data",
+id : "17",
 alias : "Lake Powell Reservoir Storage",
 columns : cols
 };
@@ -34,3 +34,5 @@ tableau.connectionName = "columns";
 tableau.submit();
 });
 });})();
+
+https://www1.nyc.gov/assets/tlc/downloads/csv/data_reports_monthly_indicators.json
