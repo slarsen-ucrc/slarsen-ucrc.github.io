@@ -30,7 +30,7 @@ doneCallback();
 tableau.registerConnector(myConnector);
 $(document).ready(function () {
 $("#submitButton").click(function () {
-tableau.connectionName = "columns";
+tableau.connectionName = "17";
 tableau.submit();
 });
 });})();
