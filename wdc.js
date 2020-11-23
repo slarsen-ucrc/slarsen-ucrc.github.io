@@ -6,7 +6,7 @@ var cols = [
 { id : "storage", alias: "Storage",dataType : tableau.dataTypeEnum.string }
 ];
 var tableInfo = {
-id : "columns",
+id : "data",
 alias : "Lake Powell Reservoir Storage",
 columns : cols
 };
