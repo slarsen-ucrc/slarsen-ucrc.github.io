@@ -6,7 +6,7 @@ var cols = [
 { id : "storage", alias: "Storage",dataType : tableau.dataTypeEnum.string }
 ];
 var tableInfo = {
-id : "17",
+id : "columns",
 alias : "Lake Powell Reservoir Storage",
 columns : cols
 };
@@ -30,7 +30,7 @@ doneCallback();
 tableau.registerConnector(myConnector);
 $(document).ready(function () {
 $("#submitButton").click(function () {
-tableau.connectionName = "17";
+tableau.connectionName = "columns";
 tableau.submit();
 });
 });})();
