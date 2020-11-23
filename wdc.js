@@ -34,5 +34,3 @@ tableau.connectionName = "columns";
 tableau.submit();
 });
 });})();
-
-https://www1.nyc.gov/assets/tlc/downloads/csv/data_reports_monthly_indicators.json
