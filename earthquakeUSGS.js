@@ -41,7 +41,7 @@
                     "id": feat[i].id,
                     "mag": feat[i].properties.mag,
                     "title": feat[i].properties.title,
-                    "location": feat[i].geometry.coordinates[0]
+                    "location": feat[i].geometry
                 });
             }
 
