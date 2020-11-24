@@ -9,7 +9,6 @@
             dataType: tableau.dataTypeEnum.string
         }, {
             id: "storage",
-            alias: "magnitude",
             dataType: tableau.dataTypeEnum.string
         }];
 
@@ -25,7 +24,7 @@
     // Download the data
     myConnector.getData = function(table, doneCallback) {
         $.getJSON("https://www.usbr.gov/uc/water/hydrodata/reservoir_data/919/json/17.json", function(resp) {
-            var feat = resp.features,
+            var feat = resp.data,
                 tableData = [];
 
             // Iterate over the JSON object
