@@ -24,14 +24,14 @@
     // Download the data
     myConnector.getData = function(table, doneCallback) {
         $.getJSON("https://www.usbr.gov/uc/water/hydrodata/reservoir_data/919/json/17.json", function(resp) {
-            var feat = resp.data,
+            var feat = resp,
                 tableData = [];
 
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
-				"date": feat[i].[0],
-                "storage": feat[i].[1]
+				"date": feat[i].data[0],
+                "storage": feat[i].data[1]
                 });
             }
 
