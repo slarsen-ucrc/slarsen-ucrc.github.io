@@ -30,8 +30,8 @@
             // Iterate over the JSON object
             for (var i = 0, len = data.length; i < len; i++) {
                 tableData.push({
-                    "datetime": feat[i],
-                    "storage": feat[i]
+                    "datetime": data[i],
+                    "storage": data[i]
                 });
             }
 
