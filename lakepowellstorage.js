@@ -5,7 +5,7 @@
     // Define the schema
     myConnector.getSchema = function(schemaCallback) {
         var cols = [{
-            id: "datetime1",
+            id: "datetime2",
             dataType: tableau.dataTypeEnum.string
         }
 		//, {
@@ -32,7 +32,7 @@
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
-				"datetime1": feat[i][0]
+				"datetime2": feat[i].data[0]
             //    "storage": feat[i].data
                 });
             }
