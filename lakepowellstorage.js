@@ -5,7 +5,7 @@
     // Define the schema
     myConnector.getSchema = function(schemaCallback) {
         var cols = [{
-            id: "datetime9",
+            id: "datetime10",
             dataType: tableau.dataTypeEnum.string
         }
 		//, {
@@ -26,13 +26,13 @@
     // Download the data
     myConnector.getData = function(table, doneCallback) {
         $.getJSON("https://www.usbr.gov/uc/water/hydrodata/reservoir_data/919/json/17.json", function(resp) {
-            var feat = resp,
+            var feat = resp.data,
                 tableData = [];
 
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
-				"datetime9": feat[i]["data"][0]
+				"datetime10": feat[i]
             //    "storage": feat[i].data
                 });
             }
