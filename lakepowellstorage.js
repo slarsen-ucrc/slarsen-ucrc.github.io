@@ -7,10 +7,10 @@
         var cols = [{
             id: "datetime",
             dataType: tableau.dataTypeEnum.string
-        } 
-		//{
-         //   id: "storage",
-         //   dataType: tableau.dataTypeEnum.string
+        }, 
+		{
+            id: "storage",
+            dataType: tableau.dataTypeEnum.string
         }];
 
         var tableSchema = {
@@ -32,7 +32,7 @@
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
 				"datetime": feat[i].data
-  //              "storage": feat[i].data[2]
+                "storage": feat[i].data[1]
                 });
             }
 
