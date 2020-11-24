@@ -6,7 +6,7 @@
     myConnector.getSchema = function(schemaCallback) {
         var cols = [{
             id: "datetime",
-            dataType: tableau.dataTypeEnum.date
+            dataType: tableau.dataTypeEnum.string
         } 
 		//{
          //   id: "storage",
