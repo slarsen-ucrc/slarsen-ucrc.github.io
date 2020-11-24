@@ -17,7 +17,7 @@
             dataType: tableau.dataTypeEnum.string
         }, {
             id: "location",
-            dataType: tableau.dataTypeEnum.geometry
+            dataType: tableau.dataTypeEnum.string
         }];
 
         var tableSchema = {
@@ -41,7 +41,7 @@
                     "id": feat[i].id,
                     "mag": feat[i].properties.mag,
                     "title": feat[i].properties.title,
-                    "location": feat[i].geometry
+                    "location": feat[i].geometry.coordinates
                 });
             }
 
