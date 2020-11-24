@@ -7,10 +7,12 @@
         var cols = [{
             id: "datetime",
             dataType: tableau.dataTypeEnum.string
-        }, {
-            id: "storage",
-            dataType: tableau.dataTypeEnum.string
-        }];
+        }
+		//, {
+        //    id: "storage",
+        //    dataType: tableau.dataTypeEnum.string
+        //}
+		];
 
         var tableSchema = {
             id: "LPStorage",
@@ -30,8 +32,8 @@
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
-				"datetime": feat[i].data,
-                "storage": feat[i].data
+				"datetime": feat[i].data
+            //    "storage": feat[i].data
                 });
             }
 
