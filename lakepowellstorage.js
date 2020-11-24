@@ -32,7 +32,7 @@
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
-				"datetime": feat[i].data[0],data
+				"datetime": feat[i].data[0].data
             //    "storage": feat[i].data
                 });
             }
