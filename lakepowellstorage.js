@@ -32,7 +32,7 @@
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
-				"datetime13": feat.getString[i][0]
+				"datetime13": feat[i]["data"][0]
                 });
             }
 
